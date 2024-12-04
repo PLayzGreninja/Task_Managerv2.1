@@ -28,6 +28,47 @@ document.getElementById("registerButton").addEventListener("click", function () 
         return;
     }
 
+    if (password.length < 8) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Registration Failed',
+            text: 'Password must be at least 8 characters',
+            button: 'OK'
+        });
+        return;
+    }
+
+    if (!/[A-Z]/.test(password)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Registration Failed',
+            text: 'Password must contain at least one uppercase letter',
+            button: 'OK'
+        });
+        return;
+    }
+
+    if (!/[a-z]/.test(password)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Registration Failed',
+            text: 'Password must contain at least one lowercase letter',
+            button: 'OK'
+        });
+        return;
+    }
+
+    if (!/[0-9]/.test(password)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Registration Failed',
+            text: 'Password must contain at least one number',
+            button: 'OK'
+        });
+        return;
+    }
+    
+
     let user = {
         fullName: fullName,
         userName: userName,
