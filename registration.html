@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Registration.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+        <div class="container">
+            <div>
+                <img src="images/registraition_logo.jpg" alt="registration" class="user-image mb-3 rounded circle shadow p-3">
+            </div>
+            <div>
+                <h1>User Registration Form</h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="firstName">Full Name:</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Username:</label>
+                            <input type="text" id="userName" name="userName" placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                    </form>
+                    <div>
+                        <button type="button" class="btn btn-success mt-3" id="registerButton">Register</button>
+                        <button type="button" class="btn btn-danger mt-3" id="cancelButton">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
