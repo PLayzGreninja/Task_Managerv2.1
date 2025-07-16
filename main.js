@@ -1,13 +1,3 @@
-// get user from local storage
-// let user = JSON.parse(localStorage.getItem("users"));
-// if (user) {
-//     if (user.userName) {
-//         document.getElementById("username").textContent = user.userName;
-//     }
-//     if (user.password) {
-//         document.getElementById("password").textContent = user.password;
-//     }
-// }
 
 // login and go to tasks
 function loginButton() {
